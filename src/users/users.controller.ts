@@ -32,7 +32,7 @@ export class UsersController {
     //update user
     @Put(':id')
     async update(@Param('id') id: number, @Body() user: User): Promise<User> {
-        return await this.usersService.update(id, user);
+        return this.usersService.update(id, user);
     }
 
     //delete user
@@ -43,6 +43,6 @@ export class UsersController {
         if (!user) {
             throw new Error('User not found');
         }
-        return await this.usersService.delete(id);
+        return this.usersService.delete(id);
 }
 }
