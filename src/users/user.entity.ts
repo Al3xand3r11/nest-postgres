@@ -10,4 +10,10 @@ export class User{
 
     @Column()
     email: string;
+
+    @Column({
+        type: 'jsonb',
+        array: false,
+    })
+    preferences: string;
 }
