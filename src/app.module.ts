@@ -17,7 +17,6 @@ import { UsersModule } from './users/users.module';
       password: process.env.PG_PASSWORD,
       database: process.env.PG_DB,
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      //not safe to use
       synchronize: true,
     }),
   ],

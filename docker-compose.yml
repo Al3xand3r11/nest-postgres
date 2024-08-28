@@ -12,7 +12,7 @@ services:
       - PG_PORT=5432
       - PG_USER=postgres
       - PG_PASSWORD=postgres
-      - PG_DB=postgres 
+      - PG_DB=postgres
     depends_on:
       - db
   db:
